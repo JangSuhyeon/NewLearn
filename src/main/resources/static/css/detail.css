@@ -1,0 +1,290 @@
+#header {
+    border-bottom:3px solid #f9f9f9;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 15px;
+}
+.content{
+    width:100%;
+}
+.content .title{
+    width:900px;
+    margin:60px auto 20px;
+    font-weight:bold;
+}
+.content .title .title-text{
+    font-size:26px;
+    font-weight: bold;
+    color:#111;
+    margin-bottom:0;
+}
+.content .title > span{
+    display:inline-block;
+    font-size:14px;
+    color:#555;
+    margin-bottom:15px;
+}
+.content .title > span .left-arrow{
+    font-size:12px;
+    line-height:14px;
+}
+.content .title p{
+    display: inline-block;
+    margin-top:15px;
+    font-size:16px;
+    color:#555;
+}
+.content .title p > span{
+    color:#000;
+}
+.content .title p i {
+    color:#4a81ff;
+}
+
+.info {
+    width:100%;
+    padding:30px 0;
+    background:#f9f9f9;
+    margin-bottom:40px;
+}
+.info-inner {
+    width:900px;
+    margin:0 auto;
+}
+.info-inner::after {
+    display:block;
+    clear:both;
+    content:'';
+}
+.info-inner > div {
+    float:left;
+    width:calc(50% - 15px);
+    height:285px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.info-inner > div.thumb {
+    margin-right:30px;
+}
+.info-inner > div.thumb > img {
+    width:100%;
+}
+.info-inner > div.check {
+    padding:30px;
+    box-sizing: border-box;
+    border:1px solid #ddd;
+}
+.info-inner > div.check > h2 {
+    line-height:21px;
+    font-weight:bold;
+    color:#444;
+    margin-bottom:15px;
+}
+.info-inner > div.check li {
+    line-height:40px;
+    color:#555;
+}
+.info-inner > div.check li i {
+    color:#4a81ff;
+}
+
+.btn-group {
+    width:900px;
+    margin:0 auto;
+    margin-top:30px;
+}
+.btn-group:after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.btn-group > * {
+    float:right;
+    height:35px;
+    line-height:35px;
+    padding:0 15px;
+    border:0;
+    background:#4a81ff;
+    color:#fff;
+    font-weight:bold;
+    font-size:14px;
+    cursor:pointer;
+    margin-left:10px;
+}
+.btn-group > .wh-btn {
+    border:1px solid #ddd;
+    background:#f1f1f1;
+    color:#555;
+    border-radius: 3px;
+}
+
+
+/*--------------------------준철추가-----------------*/
+/*.container {
+    margin: 0px auto;
+    width: 70%;
+    align-items: center;
+}*/
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 0px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.list-group a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*   승우 추가    */
+
+.lecture_container {
+    display: flex;
+    position: relative;
+
+}
+
+.list_subscription {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    padding: 20px 50px;
+
+}
+.list_subscription > h1 {
+    width: 200px;
+    margin-left: 70px;
+}
+.list_subscription > button {
+    color: #ffffff;
+    background-color: #4a81ff;
+    margin-top: 50px;
+    width: 250px;
+    height: 50px;
+}
+
+/*   승우 추가 끝    */
+
+
+/*--------------------------지연추가-----------------*/
+/*강의 설명 이미지*/
+#lecture-content {
+    margin-left: 300px;
+    width: 40%;
+}
+
+/*수강후기 모달창 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.show {
+    display: block;
+}
+
+.modal_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 510px;
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-close-modal{
+    all:unset;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+}
+
+.title-modal{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+.review-content{
+    resize: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.btn-write-review{
+    all: unset;
+    background-color: #4a81ff;
+    color: white;
+    border-radius: 5px;
+    width: 230px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+/*수강후기 리스트*/
+
+.reviewArea{
+    width:38%;
+    border-bottom:1px solid darkgray;
+    margin-bottom: 22px;
+    margin-left: 300px;
+    align-items: center;
+}
+
+.reviewInfo{
+    font-weight: bold;
+    color: #262626;
+    margin-bottom: 30px;
+}
+
+.reviewContent{
+    margin-bottom: 30px;
+}
+
+.reviewText{
+    background-color: white;
+    border : none;
+    resize : none;
+    overflow:hidden;
+    width:100%;
+    height: 100px;
+    align-content: center;
+}
+
+.reviewRegdate{
+    color: #c1c1c1;
+    font-size: 13px;
+    font-weight: bold;
+}
+/*--------------지연추가 끝-----------------*/
